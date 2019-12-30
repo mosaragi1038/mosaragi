@@ -1,1 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- OG -->
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="MAYU OSARAGI PORTFOLIO /designer">
+  <meta property="og:image" content="">
+  <meta property="og:site_name" content="MAYU OSARAGI PORTFOLIO">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@o3sama24">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/39cfc8e4f2.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="image/あああ">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta property="og:url" content="mosaragi.space">
+  <meta property="og:title" content="MAYU OSARAGI PORTFOLIO">
+  <title>MAYU OSARAGI PORTFOLIO</title>
+</head>
+
+<body>
+  <header class="l-header">
+    <a href="#passion" class="l-header__Top">MAYU OSARAGI</a>
+    <div class="l-header__Wrap">
+      <a class="l-header__Icons" href="https://twitter.com/o3sama24?ref_src=twsrc%5Etfw" target="_blank" class="l-header__Icons--Twitter"><i class="fab fa-twitter"></i></a>
+      <a class="l-header__Icons" href="https://www.wantedly.com/secret_profiles/7oS-rd-JflDjktG8kPft9Rj-s3sgJLX9" target="_blank" class="l-header__Icons--Wantedly">Wantedly</a>
+      <nav class="global-nav">
+        <ul class="global-nav__list">
+          <li class="global-nav__item"><a href="">ABOUT ME</a></li>
+          <li class="global-nav__item"><a href="">WORKS</a></li>
+          <li class="global-nav__item"><a href="">CONTACT</a></li>
+        </ul>
+      </nav>
+      <div class="l-header__Menu" id="js-hamburger"></div>
+      <div class="black-bg" id="js-black-bg"></div>
+    </div>
+  </header>
+  <div class="l-Contents">
+    <div class="l-Inner">
+      <section class="Profile">
+        <div class="Who">
+          <h2 class="Profile__Title">ABOUT ME</h2>
+          <p>I love Design, Technology,and Story.</p>
+        </div>
+        <h3>WHO I AM</h3>
+        <div class="Who__Name">
+          <h4>MAYU MAYU</h4>
+          <p>大佛　茉由</p>
+        </div>
+        <p class="Who__text">1992年、沖縄県生まれ。大学を卒業後、県内の制作会社でDTPオペレーターとして就職後、大手紳士服量販店を中心に十数社のコーポレートサイトの運用業務を担当しました。<br>2017年より、個人でもWebデザイナーとしての活動を開始し、写真撮影・デザイン・コーディングまでワンストップで対応しています。</p>
+        <div class="Who__image"><img src="." alt="OSARAGI MAYU"></div>
+      </section>
+      <section>
+        <h2 name="passion">PASSTION</h2>
+        <dl>
+          <dt>DESIGN</dt>
+          <dd>デザインとは「魔法の杖」の様なものだと考えています。サービスやプロダクトが問題を解決するための魔法だとするならば、それを使用者（ユーザー）が使いこなすための媒介となるのがデザインの役目ではないでしょうか。ユーザーにマッチした「魔法の杖」を創造できるように日々努力します</dd>
+        </dl>
+        <dl>
+          <dt>TECHNOLOGY</dt>
+          <dd>“十分に発達した科学技術は、魔法と見分けがつかない”という言葉があるように、テクノロジーは世界と個人の人生を変える力を持っています。常に最新の技術のキャッチアップを行い、変化に対応できる人間でいたい。イノベーションを普及させるのはエンジニアとともにデザイナーの使命でもあると思っています。</dd>
+        </dl>
+        <dl>
+          <dt>TECHNOLOGY</dt>
+          <dd>“十分に発達した科学技術は、魔法と見分けがつかない”という言葉があるように、テクノロジーは世界と個人の人生を変える力を持っています。常に最新の技術のキャッチアップを行い、変化に対応できる人間でいたい。イノベーションを普及させるのはエンジニアとともにデザイナーの使命でもあると思っています。</dd>
+        </dl>
+      </section>
+      <section>
+        <h2>SKILL SET</h2>
+        <ul>
+          <li>
+            <h3>sketch</h3>
+            <p>2年</p>
+          </li>
+          <li>
+            <h3>HTML/CSS</h3>
+            <p>2年</p>
+          </li>
+          <li>
+            <h3>Photoshop</h3>
+            <p>2年</p>
+          </li>
+          <li>
+            <h3>Illustrator</h3>
+            <p>4年</p>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </div>
+  <footer>
+    <a href="image">MAYU OSARAGI</a>
+    <p>© Copyright 2019 MAYU OSARAGI All rights reserved.</p>
+  </footer>
+  <script>
+    function toggleNav() {
+      var body = document.body;
+      var hamburger = document.getElementById('js-hamburger');
+      var blackBg = document.getElementById('js-black-bg');
+
+      hamburger.addEventListener('click', function() {
+        body.classList.toggle('nav-open');
+      });
+      blackBg.addEventListener('click', function() {
+        body.classList.remove('nav-open');
+      });
+    }
+    toggleNav();
+  </script>
+</body>
+
+</html>
