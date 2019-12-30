@@ -1,0 +1,169 @@
+@charset "UTF-8"
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600&display=swap');
+
+body {
+    font-family: 'Raleway', 'Helvetica Neue', 'Helvetica', 'Arial', 'Avenir', 'Hiragino Sans', 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+.l-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    font-weight: bold;
+    justify-content: space-between;
+}
+
+.l-header__Top {
+    font-size: 1.2rem;
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+    position: relative;
+    color: #fff;
+}
+
+.l-header__Wrap {
+    display: flex;
+    cursor: pointer;
+    margin-right: 40px;
+}
+
+.l-header__Icons {
+    display: flex;
+    margin-right: 20px;
+    font-size: 1.2em;
+    color: #fff;
+    text-decoration: none;
+}
+
+.l-header__Menu {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 300;
+}
+
+.l-header__Menu:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 4px;
+    top: 0;
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+.l-header__Menu:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+.global-nav {
+    position: fixed;
+    right: -320px;
+    /* これで隠れる */
+    top: 0;
+    width: 300px;
+    /* スマホに収まるくらい */
+    height: 100vh;
+    padding-top: 78px;
+    background-color: #d81b60;
+    transition: all .6s;
+    z-index: 200;
+    overflow-y: auto;
+    /* メニューが多くなったらスクロールできるように */
+}
+
+.global-nav__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.global-nav__item {
+    text-align: center;
+    padding: 0 14px;
+}
+
+.global-nav__item a {
+    display: block;
+    padding: 12px 0;
+    text-decoration: none;
+    color: #fff;
+}
+
+.global-nav__item a:hover {
+    background-color: #f48fb1;
+}
+
+.black-bg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background-color: #000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .6s;
+    cursor: pointer;
+}
+
+/* 表示された時用のCSS */
+.nav-open .global-nav {
+    right: 0;
+}
+
+.nav-open .black-bg {
+    opacity: .8;
+    visibility: visible;
+}
+
+.nav-open .l-header__Menu:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    background-color: #fff;
+    transform: rotate(45deg);
+    transition: 0.5s;
+    top: 20px;
+}
+
+.nav-open .l-header__Menu:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    background-color: #fff;
+    transform: rotate(-45deg);
+    transition: 0.5s;
+    top: 20px;
+}
+
+.l-Contents {
+  background-color: #d81b60;
+}
+
+.l-Inner{
+  padding-top: 90px;
+}
+
+.Profile{
+
+}
+
+.Profile__Title{
+  font-size: 3rem;
+}
