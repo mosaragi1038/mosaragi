@@ -1,0 +1,253 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600&display=swap');
+html{
+    font-size: 62.5%;
+}
+body {
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'Avenir', 'Hiragino Sans', 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+ol,li{
+    list-style-type: none;
+    argin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+a{
+    color: inherit;
+}
+
+.Header{
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 60px;
+font-weight: bold;
+font-family: 'Raleway';
+color: #fff;
+backdrop-filter:blur(20px);
+z-index: 2;
+}
+.Header__Wrap{
+    padding: 24px 28px;
+    display: flex;
+    justify-content: space-between;
+}
+.Header__Top{
+    font-size: 1.6rem;
+}
+.GlobalNavlist{
+    display: flex;
+    justify-content: flex-end;
+}
+.GlobalNavlist__Item{
+    padding-left: 48px;
+    font-size:1.6rem;
+}
+.Content{
+    background-color:#FFF5EF;
+    width: 100%;
+}
+.Content__Wrap{
+    min-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+.Keyvisual{
+height: 257px;
+background: linear-gradient(45deg,#FF0000 -44.72%, #FF9C88 65.6%);
+}
+.Keyvisual.Sub{
+ height: 100px;
+}
+.About__Img{
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    transform: translateY(-36%) translateX(-50%);
+    -webkit- transform: translateY(-36%) translateX(-50%);
+    margin: auto;
+    border: 30px solid #FFF5EF;
+    border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
+}
+.About{
+    margin: 152px 0 88px;
+}
+.Profile{
+    margin-bottom: 88px;
+}
+.SectionTitle{
+    color: #FF0000;
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 3.2rem;
+}
+.SectionTitle.Sub{
+    color: #222;
+    font-size: 4.8rem;
+    margin-top: -90px;
+}
+.SectionsubTitle{
+    color: #535353;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-top:10px;
+}
+
+.SectionText{
+    color: #535353;
+    font-weight: normal;
+    font-size: 1.6rem;
+    margin: 28px 0 48px;
+    line-height: 2.4rem;
+}
+.SkillTitle{
+    color: #535353;
+    font-family: 'Raleway';
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+.SkillsubTitle{
+    color: #535353;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+.SkillList{
+display: flex;
+justify-content: center;
+width: 700px;
+margin: 48px auto 0;
+}
+.SkillList__Item{
+    background: rgba(255, 0, 0, 0.1);
+border-radius: 40px;
+padding: 8px 15px;
+color: #535353;
+font-size: 1.2rem;
+margin-left: 12px;
+}
+.SkillList__Item:first-child{
+    margin-left: 0;
+}
+.Work{
+    background-color: #FFF0EA;
+    padding-bottom:88px;
+}
+.Work__Wrap{
+    padding-top: 60px;
+    margin-top:-60px;
+}
+
+.WorkFilter{
+    display: flex;
+    justify-content: center;
+    width: 700px;
+    margin: 16px auto 0;
+    }
+    .WorkFilter__Item{
+    background: rgba(255, 0, 0, 0.1);
+    border-radius: 40px;
+    border: rgba(255, 0, 0, 0.1)solid 1px;
+    padding: 8px 15px;
+    color: #535353;
+    font-size: 1.2rem;
+    margin-left: 12px;
+    }
+    .WorkFilter__Item:hover{
+        background: rgba(255, 0, 0, 0.1);
+        border: #FF0000 solid 1px;
+        border-radius: 40px;
+        padding: 8px 15px;
+        color: #FF0000;
+        font-size: 1.2rem;
+        margin-left: 12px;
+        }
+        .WorkFilter__Item:active{
+            background:#FF0000;
+            border-radius: 40px;
+            padding: 8px 15px;
+            color: #fff;
+            font-size: 1.2rem;
+            margin-left: 12px;
+            }
+
+.WorkList{
+    width: 1000px;
+    display:flex;
+    justify-content: left;
+    margin: 36px auto 0;
+
+}
+.WorkList__Item{
+    width: 100%;
+    height: 348px;
+    padding: 0px 24px;
+}
+.WorkList__Image{
+border-radius: 12px;
+}
+.WorkInfo{
+    text-align: left;
+}
+.WorkTitle{
+    padding-top: 16px;
+font-size: 2.4rem;
+color: #535353;
+}
+.WorkText{
+    padding-top: 8px;
+font-size: 1.2rem;
+color: #535353;
+}
+.Contact{
+    padding-bottom:88px;
+}
+.Contact__Wrap{
+    padding-top: 60px;;
+}
+.Button--Primary{
+    background: linear-gradient(180deg, #FF0000 0%, #FF766F 100%);
+    padding: 16px 40px;
+    color: #fff;
+    font-size: 2rem;
+    border-radius: 60px;
+}
+.fa-envelope{
+font-size: 2rem;
+padding-right: 10px;
+}
+.Footer{
+    background: linear-gradient(-20deg, #FF0000 -12.39%, #FF9C88 77.92%);
+    text-align: center;
+    height: 160px;
+    padding:32px 0;
+}
+.FooterSns{
+display: flex;
+justify-content: center;
+width: 100%;
+margin: 0 auto;
+}
+.Footer__Icons{
+    color: #fff;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    background: rgba(255, 245, 239, 0.3);
+    margin: 0 8px;
+    padding: 12px;
+    font-size: 2.4rem;
+}
+.Footertext--Copyright{
+    color: #fff;
+    font-family: 'Raleways';
+    font-size: 1.2rem;
+    margin-top: 32px;
+}
+
+.Content__Form{
+    height: 810px;
+}
