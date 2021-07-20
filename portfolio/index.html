@@ -4,37 +4,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BG1ZF2MTDB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-BG1ZF2MTDB');
+  </script>
   <!-- Facebook Meta Info -->
   <meta property="og:type" content="website">
-  <meta property="og:description" content="MAYU OSARAGI PORTFOLIO / Designer">
-  <meta property="og:image" content="">
-  <meta property="og:site_name" content="MAYU OSARAGI PORTFOLIO">
+  <meta property="og:description" content="こんにちは。Mayu Osaragiです。作品に関するご感想などは下記よりお問い合わせください。">
+  <meta property="og:image" content="https://mosaragi.work/images/ogp.png">
+  <meta property="og:site_name" content="Mayu Osaragi Portfolio">
   <meta property="og:locale" content="ja_JP">
   <meta property="og:url" content="http://mosaragi.work/">
-  <meta property="og:title" content="MAYU OSARAGI PORTFOLIO">
-  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:title" content="Mayu Osaragi Portfolio">
+  <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@o3sama24">
+  <meta name="description" content="こんにちは。Mayu Osaragiです。作品に関するご感想などは下記よりお問い合わせください。">
   <!-- CSS Meta Info -->
   <link rel="stylesheet" href="css/reset.min.css">
+  <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/style.css">
   <!-- JS Meta Info -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/main.js" defer="true"></script>
   <!-- Fontawesome -->
   <script src="https://kit.fontawesome.com/39cfc8e4f2.js" crossorigin="anonymous"></script>
   <!-- Favicon -->
-  <link rel="icon" href="/path/favicon.ico">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <title>MAYU OSARAGI PORTFOLIO</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="https://mosaragi.work/assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://mosaragi.work/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://mosaragi.work/assets/favicon-16x16.png">
+  <link rel="manifest" href="https://mosaragi.work/assets/site.webmanifest">
+  <link rel="mask-icon" href="https://mosaragi.work/assets/safari-pinned-tab.svg" color="#ff0000">
+  <meta name="msapplication-TileColor" content="#ffc40d">
+  <meta name="theme-color" content="#ffffff">
+  <title>Mayu Osaragi Portfolio</title>
 </head>
 
 <body>
+  <div id="Loading">
+    <div class="Spinner"></div>
+  </div>
   <header class="Header Hidden" id="Header">
     <div class="Header__Wrap">
-      <h1><a href="index.html" class="Header__Top">MAYU OSARAGI</a></h1>
+      <h1><a href="https://mosaragi.work/" class="Header__Top">Mayu Osaragi</a></h1>
       <nav class="GlobalNav">
         <ul class="GlobalNavlist">
-          <li class="GlobalNavlist__Item"><a href="#Work">Work</a></li>
-          <li class="GlobalNavlist__Item"><a href="contact.html">Contact</a></li>
+          <li class="GlobalNavlist__Item"><a href="#Work">Works</a></li>
+          <li class="GlobalNavlist__Item">
+            <a href="https://mosaragi.work/contact.html">Contact</a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -45,89 +67,115 @@
       <section class="About">
         <div class="Profile">
           <img src="images/mayu.jpg" alt="プロフィール画像" width="240px" height="240px" class="About__Img">
-          <h2 class="SectionTitle">MAYU OSARAGI</h2>
-          <p class="SectionsubTitle">UX/UI Designer</p>
-          <p class="SectionText">1995年生まれ。埼玉県出身。<br>
-            武蔵野美術大学デザイン情報学科を卒業後、都内のITメガベンチャーで働いています。</p>
+          <h2 class="SectionTitle">Mayu Osaragi</h2>
+          <p class="SectionsubTitle">UI/UX Designer</p>
+          <p class="SectionText">
+            1995年生まれ。埼玉県出身。<br>
+            武蔵野美術大学デザイン情報学科を卒業後、都内のIT企業でデザイナーとして働いています。<br>
+            最近のブームは公園で散歩すること。
+          </p>
         </div>
         <div class="Skill">
           <h3 class="SkillTitle">My Skills</h3>
           <p class="SkillsubTitle">できること</p>
+          <p class="SectionText">
+            本業では新規プロダクト開発に従事。情報設計からUIデザインまでを主に担当。<br>
+            たまにコーディングもやっています。
+          </p>
           <ul class="SkillList">
-            <li class="SkillList__Item">Web Deisign</li>
-            <li class="SkillList__Item">Illustration</li>
+            <li class="SkillList__Item">情報設計</li>
             <li class="SkillList__Item">UI/UX</li>
+            <li class="SkillList__Item">Illustration</li>
+            <li class="SkillList__Item">Cording</li>
           </ul>
         </div>
       </section>
       <section class="Work" id="Work">
-        <div class="Work__Wrap"></div>
-        <h2 class="SectionTitle Padding">Work</h2>
-        <p class="SectionsubTitle">作品</p>
-        <ul class="WorkFilter">
-          <li class="WorkFilter__Item"><a href="" data-filter="all">all</a></li>
-          <li class="WorkFilter__Item"><a href="" data-filter="Praivate">Praivate</a></li>
-          <li class="WorkFilter__Item"><a href="" data-filter="Cliant">Cliant</a></li>
-        </ul>
-        <ul class="WorkList">
-          <li class="WorkList__Item">
-            <a href="">
-              <img src="images/homuro.png" alt="焔露" width="286px" height="286px" target="_blank"
-                class="WorkList__Image">
-              <div class="WorkInfo">
-                <h3 class="WorkTitle">焔露（ほむろう）</h3>
-                <p class="WorkText">インタラクションデザイン</p>
-              </div>
-            </a>
+        <div class="Work__Wrap">
+          <h2 class="SectionTitle Padding">Works</h2>
+          <p class="SectionsubTitle">作品</p>
+          <!-- <ul class="WorkFilter">
+          <li class="WorkFilter__Item">
+            <a href="" data-filter="all">all</a>
           </li>
-          <li class="WorkList__Item">
-            <a href="">
-              <img src="images/homuro.png" alt="焔露" width="286px" height="286px" target="_blank"
-                class="WorkList__Image">
-              <div class="WorkInfo">
-                <h3 class="WorkTitle">作品名</h3>
-                <p class="WorkText">ああああ</p>
-              </div>
-            </a>
+          <li class="WorkFilter__Item">
+            <a href="" data-filter="Praivate">Praivate</a>
           </li>
-          <li class="WorkList__Item">
-            <a href="">
-              <img src="images/homuro.png" alt="焔露" width="286px" height="286px" target="_blank"
-                class="WorkList__Image">
-              <div class="WorkInfo">
-                <h3 class="WorkTitle">作品名</h3>
-                <p class="WorkText">ああああ</p>
-              </div>
-            </a>
+          <li class="WorkFilter__Item">
+            <a href="" data-filter="Cliant">Cliant</a>
           </li>
-
-        </ul>
+        </ul> -->
+          <ul class="WorkList">
+            <li class="WorkList__Item ">
+              <a href="works/2018tixinlp.html">
+                <img src="images/tixin-min.jpg" alt="tixin" width="286px" height="286px" class="WorkList__Image"
+                  loading="lazy">
+                <div class="WorkInfo">
+                  <h3 class="WorkTitle">tixin' LP</h3>
+                  <p class="WorkText">Planning / Design / HTML,CSS / WordPress </p>
+                </div>
+              </a>
+            </li>
+            <li class="WorkList__Item ">
+              <a href="works/2019welcome.html">
+                <img src="images/shinkan-min.jpg" alt="新卒歓迎会ロゴ" width="286px" height="286px" class="WorkList__Image"
+                  loading="lazy">
+                <div class="WorkInfo">
+                  <h3 class="WorkTitle">新卒歓迎会ロゴ</h3>
+                  <p class="WorkText">Logo Design</p>
+                </div>
+              </a>
+            </li>
+            <li class="WorkList__Item ">
+              <a href="works/2017homuro.html">
+                <img src="images/homuro-min.jpg" alt="焔露" width="286px" height="286px" class="WorkList__Image"
+                  loading="lazy">
+                <div class="WorkInfo">
+                  <h3 class="WorkTitle">焔露（ほむろう）</h3>
+                  <p class="WorkText">Interaction Design</p>
+                </div>
+              </a>
+            </li>
+            <li class="WorkList__Item ">
+              <a href="works/2016umabe.html">
+                <img src="images/umabe-min.jpg" alt="うまかんべぇ〜祭りステージパネル" width="286px" height="286px"
+                  class="WorkList__Image" loading="lazy">
+                <div class="WorkInfo">
+                  <h3 class="WorkTitle">うまかんべぇ〜祭りステージパネル</h3>
+                  <p class="WorkText">Graphic Design</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="Contact">
         <div class="Contact__Wrap">
-        <h2 class="SectionTitle Padding">Contact</h2>
-        <p class="SectionsubTitle">お問い合わせ</p>
-        <p class="SectionText">お仕事のご依頼・作品に関するご感想などは下記よりお問い合わせください。<br>TwitterなどのDMでも可能です。</p>
-        <button class="Button--Primary"><i class="far fa-envelope"></i>お問い合わせ</button>
-      </div>
-    </section>
+          <h2 class="SectionTitle Padding">Contact</h2>
+          <p class="SectionsubTitle">お問い合わせ</p>
+          <p class="SectionText">
+            お仕事のご依頼・作品に関するご感想などは下記よりお問い合わせください。<br>TwitterなどのDMでも可能です。
+          </p>
+          <button class="Button--Primary" onclick="location.href='https://mosaragi.work/contact.html'">
+            <i class="far fa-envelope"></i>
+            お問い合わせ
+          </button>
+        </div>
+      </section>
     </div>
   </main>
   <footer class="Footer">
     <ul class="FooterSns">
-      <li class="Footer__Icons"><a href="https://twitter.com/o3sama24?ref_src=twsrc%5Etfw" target="_blank"
-          class="Footer__Icons--Twitter"><i class="fab fa-twitter"></i></a></li>
-      <li class="Footer__Icons"><a href="https://note.com/osamayu"target="_blank" >
-        <svg width="20px" viewBox="0 0 21 22" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M10.5 7V9.5C10.5 9.77614 10.2761 10 10 10H7M7.70711 2H18.5C18.7761 2 19 2.22386 19 2.5V20.5C19 20.7761 18.7761 21 18.5 21H2.5C2.22386 21 2 20.7761 2 20.5V7.70711C2 7.5745 2.05268 7.44732 2.14645 7.35355L7.35355 2.14645C7.44732 2.05268 7.5745 2 7.70711 2Z"
-              stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-          </svg>
-        </a></li>
+      <li class="Footer__Icons"><i class="fab fa-twitter"></i><a
+          href="https://twitter.com/o3sama24?ref_src=twsrc%5Etfw">Twitterアカウント</a></li>
+      <li class="Footer__Icons"><svg width="20px" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M10.5 7V9.5C10.5 9.77614 10.2761 10 10 10H7M7.70711 2H18.5C18.7761 2 19 2.22386 19 2.5V20.5C19 20.7761 18.7761 21 18.5 21H2.5C2.22386 21 2 20.7761 2 20.5V7.70711C2 7.5745 2.05268 7.44732 2.14645 7.35355L7.35355 2.14645C7.44732 2.05268 7.5745 2 7.70711 2Z"
+            stroke="#ff0000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        </svg><a href="https://note.com/osamayu">noteアカウント</a></li>
       <li></li>
     </ul>
-    <p class="Footertext--Copyright">© MAYU OSARAGI</p>
+    <p class="Footertext--Copyright">&copy; Mayu Osaragi</p>
   </footer>
 </body>
 
